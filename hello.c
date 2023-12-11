@@ -12,6 +12,26 @@ int verificacaoDeValor (int *numeroFileiras) {
   return 0;
 }
 
+int construtorPiramide (int numeroFileiras) {
+
+  for (int fileira = 0; fileira < numeroFileiras + 1; fileira++) {
+
+    for (int i = fileira; i < numeroFileiras + 1 - fileira; i++) {
+      printf(" ");
+    }
+
+    for (int i = fileira; i > 0; i--) {
+    printf("#");
+  }
+
+  printf("\n");
+
+  }
+
+
+  return 0;
+};
+
 
 int main(void)
 {
@@ -26,7 +46,7 @@ int main(void)
 
   verificacaoDeValor(&numeroFileiras);
 
-  printf("%i", numeroFileiras);
+  construtorPiramide(numeroFileiras);
 
 
   return 0;
