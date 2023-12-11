@@ -14,10 +14,10 @@ int verificacaoDeValor (int *numeroFileiras) {
 
 int construtorPiramide (int numeroFileiras) {
 
-  for (int fileira = 0; fileira < numeroFileiras + 1; fileira++) {
+  for (int fileira = 1; fileira < numeroFileiras + 1; fileira++) {
 
-    for (int i = fileira; i < numeroFileiras + 1 - fileira; i++) {
-      printf(" ");
+    for (int i = 2; i <= numeroFileiras + 1 - fileira; i++) {
+      printf("*");
     }
 
     for (int i = fileira; i > 0; i--) {
