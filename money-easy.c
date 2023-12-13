@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-int calcularMoedas (float troco) {
+void calcularMoedas (float troco) {
 
   int trocoEmCentavos = troco * 100;
 
@@ -40,9 +40,6 @@ int calcularMoedas (float troco) {
   printf("%i moedas de 10 centavos\n", dez);
   printf("%i moedas de 5 centavos\n", cinco);
   printf("%i moedas de 1 centavo\n", um);
-
-
-  return 0;
 }
 
 int main (void) {
